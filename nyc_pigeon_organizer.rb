@@ -40,9 +40,11 @@ def nyc_pigeon_organizer(pigeon_data)
       pigeon_list.each do |name, value|
         pigeon_list[name][key] = []
 
-
+        if values[attribute].include?(name)
           pigeon_list[name][key] << attribute.to_s
-          binding.pry
+        end
+
+          #binding.pry
         #binding.pry
       end
 
@@ -54,7 +56,7 @@ def nyc_pigeon_organizer(pigeon_data)
     #   #binding.pry
     # end
 
-    binding.pry
+    #binding.pry
   end
 
 end
